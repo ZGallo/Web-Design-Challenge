@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--Metadata-->
+<head>
+  <meta charset="UTF-8">
+  <title>VisOne Max Temperature</title>
+  <!--Bootstrap link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <!--CSS Component-->
+  <style>
+    h1 {
+      font-family: 'Georgia';
+      color: lightseagreen;
+      font-weight: bold;
+      
+    }
+
+    h2{
+      font-family: 'Georgia';
+      color: lightseagreen;
+      font-weight: bold;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 900px;
+      font-family: 'Georgia';
+      font-size: 20px;
+      padding-left: 80px;
+      
+    }
+
+    .fig2 {
+    margin-left: 100px;
+    }
+
+    .navbar-brand.active{
+      font-family: 'Georgia';
+      background-color: lightseagreen;
+      color: white;
+      font-weight: bold;
+    }
+    
+    .container2{
+      width: 500px;
+      align-content: center;
+      margin-left:-120px;
+
+    }
+  
+    .jumbotron{
+      background-color: white;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-top: 50px;
+    }
+
+    .visualizations{
+      padding-left: 50px;
+    }
+
+    body{
+      background-color: lightgrey;
+    }
+
+    #hum{
+      border: #5ac5b7 solid;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand active" href="#">Latitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    
+      <!--Responsive Navbar-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto"> 
+          <!--Plots Dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="landing-page.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>      
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="VisOne.html">Max Temperature</a>
+              <a class="dropdown-item" href="VisTwo.html">Humidity</a>
+              <a class="dropdown-item" href="VisThree.html">Cloudiness</a>
+              <a class="dropdown-item" href="VisFour.html">Windspeed</a>
+            </div>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item active">
+          <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
+        </li>
+        </ul>
+      </div>
+    
+  </nav>
+  <!--Next SectionA-->
+  <div class="row">
+    <!--Summary: Lat vs X section-->
+    <div class="col-md-8">
+      <div class="container">
+        <div class="jumbotron">
+          <!--Title-->
+          <h1 class="display-6">vs. Humidity</h1>
+          <hr>
+          <!--import figure 1-->
+          <div class="fig2">
+            <img src = "Resources/images/Fig2.png" alt = "fig2" width="500" height="500">
+          </div>
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, 
+            however is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be
+          due to the tilt of the earth at the time of the year this data was</p>
+        </div>
+      </div>
+    </div>
+    <!--Vizualisations-->
+    <div class="col-md-2">
+      <div class="container2">
+        <div class="jumbotron">
+          <!--Title-->
+          <h2 class="display-8">Vizualisations</h2>
+          <hr>
+          <!--import figures-->
+          <div class="visualizations">
+            <div class="row">
+              <img src = "Resources/images/Fig1.png" alt = "fig1" width="200" height="200" id = "temp">
+              <img src = "Resources/images/Fig2.png" alt = "fig2" width="200" height="200" id = "hum">
+            </div>
+            <div class="row">
+              <img src = "Resources/images/Fig3.png" alt = "fig3" width="200" height="200">
+              <img src = "Resources/images/Fig4.png" alt = "fig4" width="200" height="200">
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

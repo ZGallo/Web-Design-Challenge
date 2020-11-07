@@ -1,0 +1,35 @@
+/*
+ * CSS for the table data html
+ */
+
+.navbar-brand.active{
+    font-family: 'Georgia';
+    background-color: lightseagreen;
+    color: white;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Georgia';
+    color: lightseagreen;
+    font-weight: bold;
+}
+  
+.jumbotron{
+    align-self: center;
+    align-content: center;
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    width: 1000px;
+    margin-left: 550px;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+body{
+    background-color: lightgrey;
+  }
+
+.th
