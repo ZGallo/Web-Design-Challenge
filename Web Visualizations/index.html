@@ -8,7 +8,7 @@
   <!--Bootstrap link-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" type="text/css" href="index.css">
   <!--CSS Component-->
   <style>
     h1 {
@@ -65,7 +65,7 @@
       background-color: lightgrey;
     }    
       /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-      @media (max-width: 600px) { 
+    @media (max-width: 700px) { 
       .navbar-toggler {
         background-color: lightseagreen;
         color: white;
@@ -82,12 +82,9 @@
 
       .navbar.navbar-expand-lg.navbar-light.bg-light{
         background-color:  lightseagreen;
-      }
-
-
-
-
-  }
+        color: lightseagreen;
+      }  
+    }
   </style>
 </head>
 
@@ -118,7 +115,7 @@
         </li>
         
         <li class="nav-item active">
-          <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="Data.html">Data <span class="sr-only">(current)</span></a>
         </li>
         </ul>
       </div>
@@ -143,7 +140,7 @@
       </div>
     </div>
     <!--Vizualisations-->
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-1">
       <div class="container2">
         <div class="jumbotron">
           <!--Title-->
